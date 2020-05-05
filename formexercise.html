@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Exercise</title>
+  </head>
+  <body>
+    <form>
+      <div class="header">
+        <h1>Register</h1>
+      </div>
+      <div class="name">
+        <label for="first">First Name:</label>
+        <input
+          name="first"
+          id="first"
+          type="text"
+          placeholder="John"
+          required
+        />
+        <label for="last">Last Name:</label>
+        <input name="last" id="last" type="text" placeholder="Smith" required />
+      </div>
+      <div class="gender">
+        <label for="male">Male</label>
+        <input name="gender" id="male" type="radio" value="male" />
+        <label for="female">Female</label>
+        <input name="gender" id="female" type="radio" value="female" />
+        <label for="other">Other</label>
+        <input name="gender" id="other" type="radio" value="other" />
+      </div>
+      <div class="login">
+        <label for="email">Email:</label>
+        <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="your email"
+          required
+        />
+        <label for="password">Password:</label>
+        <input
+          name="password"
+          id="password"
+          type="text"
+          pattern=".{5,10}"
+          required
+          title="Password must be between 5-10 characters"
+        />
+      </div>
+      <div class="dob">
+        <label for="birthday">
+          Birthday:
+          <select name="month">
+            <option value="default">month</option>
+            <option value="jan">Jan</option>
+            <option value="apr">Apr</option>
+          </select>
+          <select name="day">
+            <option value="default">day</option>
+            <option value="six">6</option>
+            <option value="twentysev">27</option>
+          </select>
+          <select name="year">
+            <option value="default">year</option>
+            <option value="col">1987</option>
+            <option value="gra">1985</option>
+          </select>
+        </label>
+      </div>
+      <div class="terms">
+        <label for="tc">I agree to the terms and conditions</label>
+        <input name="tc" id="tc" type="checkbox" />
+      </div>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
